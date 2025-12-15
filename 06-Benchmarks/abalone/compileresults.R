@@ -1,0 +1,23 @@
+library(tidyverse)
+dat<-read_csv(file = "pred/pred.csv")
+
+colnames(dat)
+
+sqrt(mean((dat$Class_number_of_rings-dat$pt2.mean)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$pt2.median)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$pt2.mode)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$pt3.mean)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$pt3.median)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$pt3.mode)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$ann)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$bart)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$cart)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$gam)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$gbm)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$knn.pred)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$ols)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$svm.linpred)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$svm.polypred)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$svm.radpred)^2))
+sqrt(mean((dat$Class_number_of_rings-dat$svm.sigpred)^2))
+

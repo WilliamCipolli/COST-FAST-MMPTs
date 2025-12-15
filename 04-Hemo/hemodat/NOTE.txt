@@ -1,0 +1,7 @@
+Data can not be shared by access rules.
+
+Please visit 
+
+https://data.projectdatasphere.org/projectdatasphere/html/content/36e68be4-934d-4782-a6e4-a327147f5cc7
+
+to request these data. 

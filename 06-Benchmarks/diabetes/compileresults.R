@@ -1,0 +1,25 @@
+library(tidyverse)
+
+dat<-read_csv(file ="pred/pred.csv")
+
+sqrt(mean((dat$class-dat$pt2.mean)^2))
+sqrt(mean((dat$class-dat$pt2.median)^2))
+sqrt(mean((dat$class-dat$pt2.mode)^2))
+sqrt(mean((dat$class-dat$pt3.mean)^2))
+sqrt(mean((dat$class-dat$pt3.median)^2))
+sqrt(mean((dat$class-dat$pt3.mode)^2))
+sqrt(mean((dat$class-dat$ann)^2))
+sqrt(mean((dat$class-dat$bart)^2))
+sqrt(mean((dat$class-dat$cart)^2))
+sqrt(mean((dat$class-dat$gam)^2))
+sqrt(mean((dat$class-dat$gbm)^2))
+sqrt(mean((dat$class-dat$knn.pred)^2))
+sqrt(mean((dat$class-dat$ols)^2))
+#sqrt(mean((dat$class-dat$qr)^2))
+sqrt(mean((dat$class-dat$svm.linpred)^2))
+sqrt(mean((dat$class-dat$svm.polypred)^2))
+sqrt(mean((dat$class-dat$svm.radpred)^2))
+sqrt(mean((dat$class-dat$svm.sigpred)^2))
+#sqrt(mean((dat$class-dat$loess)^2,na.rm=T)),
+#sqrt(mean((dat$class-dat$np)^2)))
+
